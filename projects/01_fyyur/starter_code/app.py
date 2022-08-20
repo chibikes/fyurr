@@ -3,14 +3,18 @@
 #----------------------------------------------------------------------------#
 
 import json
+import sys
+from unicodedata import name
 import dateutil.parser
 import babel
 from flask import Flask, render_template, request, Response, flash, redirect, url_for
 from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 import logging
 from logging import Formatter, FileHandler
 from flask_wtf import Form
+from config import SQLALCHEMY_DATABASE_URI
 from forms import *
 #----------------------------------------------------------------------------#
 # App Config.
@@ -19,17 +23,23 @@ from forms import *
 app = Flask(__name__)
 moment = Moment(app)
 app.config.from_object('config')
+app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-
+migrate = Migrate(app, db)
 # TODO: connect to a local postgresql database
 
 #----------------------------------------------------------------------------#
 # Models.
 #----------------------------------------------------------------------------#
+class City(db.Model):
+  __tablename__ = 'cities'
+  id = db.Column(db.Integer, primary_key=True)
+  name = db.Column(db.String)
+  state = db.Column(db.String)
 
 class Venue(db.Model):
-    __tablename__ = 'Venue'
-
+    __tablename__ = 'venues'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
     city = db.Column(db.String(120))
@@ -38,11 +48,14 @@ class Venue(db.Model):
     phone = db.Column(db.String(120))
     image_link = db.Column(db.String(500))
     facebook_link = db.Column(db.String(120))
+    seeking_talent = db.Column(db.Boolean, nullable=False, default=False)
+    seeking_description = db.Column(db.String)
+    website = db.Column(db.String(120))
 
     # TODO: implement any missing fields, as a database migration using Flask-Migrate
 
 class Artist(db.Model):
-    __tablename__ = 'Artist'
+    __tablename__ = 'artists'
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
@@ -52,10 +65,16 @@ class Artist(db.Model):
     genres = db.Column(db.String(120))
     image_link = db.Column(db.String(500))
     facebook_link = db.Column(db.String(120))
+    venues = db.relationship('Venue', secondary='shows', backref='artists', lazy=True)
 
     # TODO: implement any missing fields, as a database migration using Flask-Migrate
 
 # TODO Implement Show and Artist models, and complete all model relationships and properties, as a database migration.
+show = db.Table('shows', 
+db.Column('venue_id', db.Integer, db.ForeignKey('venues.id'), primary_key=True),
+db.Column('artist_id', db.Integer, db.ForeignKey('artists.id'), primary_key=True),
+db.Column('start_time', db.DateTime, nullable=False))
+
 
 #----------------------------------------------------------------------------#
 # Filters.
@@ -87,6 +106,20 @@ def index():
 def venues():
   # TODO: replace with real venues data.
   #       num_upcoming_shows should be aggregated based on number of upcoming shows per venue.
+  venues = Venue.query.all()
+  cities = City.query.all()
+  real_data = []
+  for c in cities:
+    cdict = {}
+    slists = []
+    cdict['city'] = c.name
+    cdict['state'] = c.state
+    for v in venues:
+      if v.city == c.name:
+        slists.append({'id': v.id, 'name': v.name})
+    cdict['venues'] = slists
+    real_data.append(cdict)
+
   data=[{
     "city": "San Francisco",
     "state": "CA",
@@ -108,7 +141,7 @@ def venues():
       "num_upcoming_shows": 0,
     }]
   }]
-  return render_template('pages/venues.html', areas=data);
+  return render_template('pages/venues.html', areas=real_data)
 
 @app.route('/venues/search', methods=['POST'])
 def search_venues():
@@ -129,6 +162,7 @@ def search_venues():
 def show_venue(venue_id):
   # shows the venue page with the given venue_id
   # TODO: replace with real venue data from the venues table, using venue_id
+  venue = Venue.query.get(venue_id)
   data1={
     "id": 1,
     "name": "The Musical Hop",
@@ -221,9 +255,26 @@ def create_venue_form():
 def create_venue_submission():
   # TODO: insert form data as a new Venue record in the db, instead
   # TODO: modify data to be the data object returned from db insertion
+  
+  try:
+    city = City(name=request.form['city'],state=request.form['state'])
+    db.session.add(city)
+    ven = Venue(name=request.form['name'],city=request.form['city'],state=request.form['state'],
+    address= request.form['address'],phone=request.form['phone'],
+    image_link=request.form['image_link'], facebook_link=request.form['facebook_link'],
+    website=request.form['website_link'],seeking_talent=False,
+    seeking_description=request.form['seeking_description'])
+    db.session.add(ven)
+    db.session.commit()
+    flash('Venue ' + request.form['name'] + ' was successfully listed!')
+  except:
+    db.session.rollback()
+    flash('An error occurred. Venue ' + request.form['name'] + ' could not be listed')
+  finally:
+    db.session.close()
 
   # on successful db insert, flash success
-  flash('Venue ' + request.form['name'] + ' was successfully listed!')
+  
   # TODO: on unsuccessful db insert, flash an error instead.
   # e.g., flash('An error occurred. Venue ' + data.name + ' could not be listed.')
   # see: http://flask.pocoo.org/docs/1.0/patterns/flashing/
@@ -233,6 +284,14 @@ def create_venue_submission():
 def delete_venue(venue_id):
   # TODO: Complete this endpoint for taking a venue_id, and using
   # SQLAlchemy ORM to delete a record. Handle cases where the session commit could fail.
+  try:
+    venue = Venue.query.filter_by(id=venue_id).one()
+    db.session.delete(venue)
+    db.session.commit()
+  except:
+    db.session.rollback()
+  finally:
+    db.session.close()
 
   # BONUS CHALLENGE: Implement a button to delete a Venue on a Venue Page, have it so that
   # clicking that button delete it from the db then redirect the user to the homepage
@@ -243,16 +302,17 @@ def delete_venue(venue_id):
 @app.route('/artists')
 def artists():
   # TODO: replace with real data returned from querying the database
-  data=[{
-    "id": 4,
-    "name": "Guns N Petals",
-  }, {
-    "id": 5,
-    "name": "Matt Quevedo",
-  }, {
-    "id": 6,
-    "name": "The Wild Sax Band",
-  }]
+  data = Artist.query.all()
+  # data=[{
+  #   "id": 4,
+  #   "name": "Guns N Petals",
+  # }, {
+  #   "id": 5,
+  #   "name": "Matt Quevedo",
+  # }, {
+  #   "id": 6,
+  #   "name": "The Wild Sax Band",
+  # }]
   return render_template('pages/artists.html', artists=data)
 
 @app.route('/artists/search', methods=['POST'])

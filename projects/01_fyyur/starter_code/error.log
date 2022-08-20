@@ -1,1 +1,325 @@
 
+2022-08-19 18:35:45,446 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:516]
+2022-08-19 18:36:46,198 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 18:37:42,275 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 18:38:16,708 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 18:39:33,313 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 18:42:31,386 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 18:42:49,019 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 18:52:00,997 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 18:54:39,804 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 19:00:58,675 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 19:01:18,299 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 19:01:31,238 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 19:01:56,751 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 19:02:15,231 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 19:02:36,879 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 19:02:49,484 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 19:04:17,950 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 22:43:55,528 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:517]
+2022-08-19 23:40:31,171 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:537]
+2022-08-19 23:41:18,651 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:537]
+2022-08-20 00:06:47,003 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:537]
+2022-08-20 00:08:48,580 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:537]
+2022-08-20 00:17:07,253 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:538]
+2022-08-20 00:52:23,603 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:538]
+2022-08-20 01:00:48,054 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:538]
+2022-08-20 02:12:41,250 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:559]
+2022-08-20 02:13:09,868 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:559]
+2022-08-20 02:14:51,655 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:559]
+2022-08-20 02:25:02,151 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:559]
+2022-08-20 02:25:15,061 ERROR: Exception on /venues/create [POST] [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1800, in _execute_context
+    context = constructor(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\default.py", line 1116, in _init_compiled
+    param = {
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\default.py", line 1117, in <dictcomp>
+    key: processors[key](compiled_params[key])
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 2000, in process
+    value = _strict_as_bool(value)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 1975, in _strict_as_bool
+    raise TypeError("Not a boolean value: %r" % (value,))
+TypeError: Not a boolean value: 'y'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py", line 275, in create_venue_submission
+    db.session.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 1451, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 3383, in flush
+    self._flush(objects)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 3522, in _flush
+    with util.safe_reraise():
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 3483, in _flush
+    flush_context.execute()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\elements.py", line 333, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1806, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1800, in _execute_context
+    context = constructor(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\default.py", line 1116, in _init_compiled
+    param = {
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\default.py", line 1117, in <dictcomp>
+    key: processors[key](compiled_params[key])
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 2000, in process
+    value = _strict_as_bool(value)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 1975, in _strict_as_bool
+    raise TypeError("Not a boolean value: %r" % (value,))
+sqlalchemy.exc.StatementError: (builtins.TypeError) Not a boolean value: 'y'
+[SQL: INSERT INTO venues (name, city, state, address, phone, image_link, facebook_link, seeking_talent, seeking_description, website, city_id) VALUES (%(name)s, %(city)s, %(state)s, %(address)s, %(phone)s, %(image_link)s, %(facebook_link)s, %(seeking_talent)s, %(seeking_description)s, %(website)s, %(city_id)s) RETURNING venues.id]
+[parameters: [{'image_link': 'https://images.unsplash.com/photo-1497032205916-ac775f0649ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80 ... (126 characters truncated) ... San Francisco', 'seeking_description': 'looking for an able bodied man', 'name': 'The Musical Hop', 'address': '1015 Folsom Street', 'city_id': None}]]
+2022-08-20 02:25:37,041 ERROR: Exception on /venues/create [POST] [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1800, in _execute_context
+    context = constructor(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\default.py", line 1116, in _init_compiled
+    param = {
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\default.py", line 1117, in <dictcomp>
+    key: processors[key](compiled_params[key])
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 2000, in process
+    value = _strict_as_bool(value)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 1975, in _strict_as_bool
+    raise TypeError("Not a boolean value: %r" % (value,))
+TypeError: Not a boolean value: 'y'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py", line 275, in create_venue_submission
+    db.session.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 1451, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 3383, in flush
+    self._flush(objects)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 3522, in _flush
+    with util.safe_reraise():
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 3483, in _flush
+    flush_context.execute()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\elements.py", line 333, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1806, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1800, in _execute_context
+    context = constructor(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\default.py", line 1116, in _init_compiled
+    param = {
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\default.py", line 1117, in <dictcomp>
+    key: processors[key](compiled_params[key])
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 2000, in process
+    value = _strict_as_bool(value)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 1975, in _strict_as_bool
+    raise TypeError("Not a boolean value: %r" % (value,))
+sqlalchemy.exc.StatementError: (builtins.TypeError) Not a boolean value: 'y'
+[SQL: INSERT INTO venues (name, city, state, address, phone, image_link, facebook_link, seeking_talent, seeking_description, website, city_id) VALUES (%(name)s, %(city)s, %(state)s, %(address)s, %(phone)s, %(image_link)s, %(facebook_link)s, %(seeking_talent)s, %(seeking_description)s, %(website)s, %(city_id)s) RETURNING venues.id]
+[parameters: [{'image_link': 'https://images.unsplash.com/photo-1497032205916-ac775f0649ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80 ... (126 characters truncated) ... San Francisco', 'seeking_description': 'looking for an able bodied man', 'name': 'The Musical Hop', 'address': '1015 Folsom Street', 'city_id': None}]]
+2022-08-20 02:30:21,079 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:559]
+2022-08-20 02:31:44,192 ERROR: Exception on /venues/create [POST] [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1800, in _execute_context
+    context = constructor(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\default.py", line 1116, in _init_compiled
+    param = {
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\default.py", line 1117, in <dictcomp>
+    key: processors[key](compiled_params[key])
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 2000, in process
+    value = _strict_as_bool(value)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 1975, in _strict_as_bool
+    raise TypeError("Not a boolean value: %r" % (value,))
+TypeError: Not a boolean value: 'y'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py", line 275, in create_venue_submission
+    db.session.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 1451, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 3383, in flush
+    self._flush(objects)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 3522, in _flush
+    with util.safe_reraise():
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 3483, in _flush
+    flush_context.execute()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\elements.py", line 333, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1806, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\base.py", line 1800, in _execute_context
+    context = constructor(
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\default.py", line 1116, in _init_compiled
+    param = {
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\engine\default.py", line 1117, in <dictcomp>
+    key: processors[key](compiled_params[key])
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 2000, in process
+    value = _strict_as_bool(value)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 1975, in _strict_as_bool
+    raise TypeError("Not a boolean value: %r" % (value,))
+sqlalchemy.exc.StatementError: (builtins.TypeError) Not a boolean value: 'y'
+[SQL: INSERT INTO venues (name, city, state, address, phone, image_link, facebook_link, seeking_talent, seeking_description, website, city_id) VALUES (%(name)s, %(city)s, %(state)s, %(address)s, %(phone)s, %(image_link)s, %(facebook_link)s, %(seeking_talent)s, %(seeking_description)s, %(website)s, %(city_id)s) RETURNING venues.id]
+[parameters: [{'facebook_link': 'http://facebook.com', 'phone': '8025154099', 'city_id': 1, 'website': 'nothing', 'address': 'Okombo', 'name': 'Okoh', 'city': 'San ... (108 characters truncated) ... image_link': 'https://images.unsplash.com/photo-1497032205916-ac775f0649ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'}]]
+2022-08-20 02:34:30,891 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:559]
+2022-08-20 02:53:35,398 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:568]
+2022-08-20 03:09:04,001 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:570]
+2022-08-20 03:11:46,197 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:570]
+2022-08-20 03:12:38,769 ERROR: Exception on /venues/create [POST] [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py", line 271, in create_venue_submission
+    seeking_talent = request.form['seeking_talent']
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\werkzeug\datastructures.py", line 375, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py", line 284, in create_venue_submission
+    print('*****>>>>>' +sys.exc_info())
+TypeError: can only concatenate str (not "tuple") to str
+2022-08-20 03:14:22,610 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:571]
+2022-08-20 03:15:45,812 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:571]
+2022-08-20 03:16:14,360 ERROR: Exception on /artists/create [POST] [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py", line 485, in create_artist_submission
+    flash('Artist ' + request.form['name'] + ' was successfully listed!')
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\helpers.py", line 361, in flash
+    session["_flashes"] = flashes
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\sessions.py", line 98, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2022-08-20 08:41:44,348 INFO: errors [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py:572]
+2022-08-20 08:42:11,794 ERROR: Exception on /artists/create [POST] [in C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\app.py", line 486, in create_artist_submission
+    flash('Artist ' + request.form['name'] + ' was successfully listed!')
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\helpers.py", line 361, in flash
+    session["_flashes"] = flashes
+  File "C:\Users\OKOH\projectfuyrr\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\sessions.py", line 98, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
