@@ -316,15 +316,6 @@ def edit_artist_submission(artist_id):
 
   if form.validate_on_submit():
     try:
-      artist.name = request.form['name']
-      artist.city = request.form['city']
-      artist.state = request.form['state']
-      artist.phone = request.form['phone']
-      artist.facebook_link = request.form['facebook_link']
-      artist.image_link = request.form['image_link']
-      artist.website_link = request.form['website_link']
-      artist.seeking_description = request.form['seeking_description']
-      artist.genres = request.form.getlist('genres')
       db.session.add(artist)
       db.session.commit()
       flash('Edit successfully')
@@ -347,23 +338,21 @@ def edit_venue_submission(venue_id):
   venue = Venue.query.get(venue_id)
   form = VenueForm(obj=venue)
   form.populate_obj(venue)
-  
+
   if form.validate_on_submit():
     try:
-      venue.name = request.form['name']
-      venue.city = request.form['city']
-      venue.state = request.form['state']
-      venue.phone = request.form['phone']
-      venue.facebook_link = request.form['address']
-      venue.facebook_link = request.form['facebook_link']
-      venue.image_link = request.form['image_link']
-      venue.website_link = request.form['website_link']
-      venue.seeking_description = request.form['seeking_description']
-      venue.genres = request.form.getlist('genres')
+      del_cities()
+      # add city if it does not exist in the city database
+      cities = City.query.filter_by(name=venue.city)
+      if cities.count() < 1:
+        new_city = City(name=venue.city, state=venue.state)
+        db.session.add(new_city)
+ 
       db.session.add(venue)
       db.session.commit()
       flash('Edited successfully')
     except:
+      print(sys.exc_info())
       flash('An error occured')
       db.session.rollback()
     finally:
@@ -465,6 +454,16 @@ def create_show_submission():
   # e.g., flash('An error occurred. Show could not be listed.')
   # see: http://flask.pocoo.org/docs/1.0/patterns/flashing/
   return render_template('pages/home.html')
+
+# method to delete redundant/duplicate cities
+def del_cities():
+  cities = City.query.all()
+  for city in cities:
+    venue = Venue.query.filter_by(city=city.name)
+    if venue.count() < 1:
+      city = City.query.get(city.id)
+      db.session.delete(city)
+  db.session.commit()
 
 @app.errorhandler(404)
 def not_found_error(error):
